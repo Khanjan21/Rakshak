@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Chatbot</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <!-- Messages will be appended here dynamically -->
+        </div>
+        <div class="input-box">
+            <label for="user-input" class="visually-hidden">Enter your message</label>
+            <textarea id="user-input" aria-label="Type your message" placeholder="Type a message..."></textarea>
+            <button id="send-button" aria-label="Send message" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <div class="spinner" id="loading-spinner" style="display: none;"></div>
+
+    <script src="client.js"></script>
+</body>
+</html>
